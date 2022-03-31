@@ -1,0 +1,6 @@
+rulesrcipv4,rulesrcprt,ruleproto,ruledstipv4,ruledstport,testscript,testhost,testargs
+10.1.0.0/24,*,tcp,0.0.0.0/0,80,linuxssh-tcpcheck.robot,10.1.0.25,  --variable  SSHHOST:10.1.0.25   --variable  SSHUSERNAME:johndoe   --variable  SSHPASSWORD:demtests    --variable  DESTHOST:www.google.com --variable  DESTPORT:80
+10.1.0.0/24,*,tcp,0.0.0.0/0,80,linuxssh-tcpcheck.robot,10.1.0.25,  --variable  SSHHOST:10.1.0.25   --variable  SSHUSERNAME:johndoe   --variable  SSHPASSWORD:demtests    --variable  DESTHOST:www.google.com   --variable  DESTPORT:82
+10.1.0.0/24,*,tcp,0.0.0.0/0,80,linuxssh-tcpcheckfail.robot,10.1.0.25,  --variable  SSHHOST:10.1.0.25   --variable  SSHUSERNAME:johndoe   --variable  SSHPASSWORD:demtests    --variable  DESTHOST:www.google.com   --variable  DESTPORT:82
+10.1.0.0/24,*,tcp,0.0.0.0/0,80,linuxssh-curlhttpcheck.robot,10.1.0.25,  --variable  SSHHOST:10.1.0.25   --variable  SSHUSERNAME:johndoe   --variable  SSHPASSWORD:demtests    --variable  DESTHOST:www.google.com --variable  DESTPORT:80
+10.1.0.0/24,*,tcp,0.0.0.0/0,80,linuxssh-curlhttpcheckfail.robot,10.1.0.25,  --variable  SSHHOST:10.1.0.25   --variable  SSHUSERNAME:johndoe   --variable  SSHPASSWORD:demtests    --variable  DESTHOST:www.google.com   --variable  DESTPORT:82
