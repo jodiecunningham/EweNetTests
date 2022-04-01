@@ -18,6 +18,6 @@ Open Connection And Log In
 
 *** Test Cases ***
 curl http fail check
-    [Documentation]                         Checks http call against given host and port
+    [Documentation]                         Checks http call against given host and port for expected failure
     ${rc}=                                  Execute Command          curl -sSf -m 2 http://${DESTHOST}:${DESTPORT} >/dev/null     return_stdout=false   return_stderr=false  return_rc=${true}
     Should Not Be Equal As Integers         ${rc}                    0

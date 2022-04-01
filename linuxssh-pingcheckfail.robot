@@ -8,7 +8,6 @@ ${SSHHOST}              10.0.38.235
 ${SSHUSERNAME}          testuser
 ${SSHPASSWORD}          testpass
 ${DESTHOST}             142.251.32.164
-${DESTPORT}             80
 
 *** Keywords ***
 Open Connection And Log In
@@ -17,7 +16,7 @@ Open Connection And Log In
 
 
 *** Test Cases ***
-curl http check
-    [Documentation]                 Checks http call against given host and port
-    ${rc}=                          Execute Command        curl -sSf -m 2 http://${DESTHOST}:${DESTPORT} >/dev/null  return_stdout=false   return_stderr=false  return_rc=${true}
-    Should Be Equal As Integers     ${rc}                  0
+Ping Failure Check
+    [Documentation]     Check to ensure ping failed to the DESTHOST
+    ${rc}=                              Execute Command         ping -q -c4 -w 5 ${DESTHOST} >/dev/null  return_stdout=false  return_stderr=false  return_rc={$true}
+    Should Not Be Equal As Integers     ${rc}                   0
