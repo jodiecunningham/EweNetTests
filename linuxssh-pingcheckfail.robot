@@ -6,13 +6,12 @@ Suite Teardown          Close All Connections
 *** Variables ***
 ${SSHHOST}              10.0.38.235
 ${SSHUSERNAME}          testuser
-${SSHPASSWORD}          testpass
 ${DESTHOST}             142.251.32.164
 
 *** Keywords ***
 Open Connection And Log In
     Open Connection     ${SSHHOST}
-    Login               ${SSHUSERNAME}     ${SSHPASSWORD}
+    Login               ${SSHUSERNAME}  look_for_keys=True     
 
 
 *** Test Cases ***
