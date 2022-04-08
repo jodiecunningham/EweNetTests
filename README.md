@@ -16,5 +16,10 @@ The idea with the testing is for it to be an automated pre/post change test suit
 
 ## Who is it for?
 ## How would I use it, where does it fit?
+![fwtesting](https://user-images.githubusercontent.com/1390085/162351589-f930116c-9054-496e-aef0-5b034c0fbfd7.png#gh-light-mode-only)
 ## How do you report bugs?
 Feel free to submit a Github Issue or send a pull request.
+
+
+
+
