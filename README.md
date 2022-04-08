@@ -16,6 +16,7 @@ The idea with the testing is for it to be an automated pre/post change test suit
 
 ## Who is it for?
 ## How would I use it, where does it fit?
+![testrunflow](https://user-images.githubusercontent.com/1390085/162353856-38e9707b-9da4-4f84-9e52-9b9c23eb89cb.png#gh-light-mode-only)
 ![fwtesting](https://user-images.githubusercontent.com/1390085/162351589-f930116c-9054-496e-aef0-5b034c0fbfd7.png#gh-light-mode-only)
 ## How do you report bugs?
 Feel free to submit a Github Issue or send a pull request.
