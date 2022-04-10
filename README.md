@@ -14,7 +14,23 @@ The idea with the testing is for it to be an automated pre/post change test suit
 * The test host servers have directory or local accounts configured for access
 * Server or Network admins can define tests to run in relation to the change
 
+## How are the files broken up? 
+Right now most tests are centered around ping, tcp port checks and curl/invoke-webrequests. They are broken up further in access method. 
+
+* azpsvmrun-linux- : Robot test runner uses Powershell Az module command Invoke-AzVmRunCommand for Linux-based tests (requires Azure guest agent on the testing host, Az PS module on Robot agent machine)
+* azvmrun-linux- : Robot test runner uses Azure az CLI vm run-command for Linux-based tests (requires Azure guest agent on the testing host, Azure CLI on Robot agent machine)
+* linuxssh- : Robot test runner connects to a Linux host via SSH to execute Linux-based tests (requires SSH client and Robot SSHLibrary)
+* winrm- : Robot test runner connects to a Windows machine with WinRM (requires pywinrm and Robot WinRM library)
+
+## Outstanding objectives:
+* Bash and Linux tool-based CSV parsing test runner
+* Az CLI and Az PS runners for Windows based tests
+* Automatic test method and test host selection based CSV details or known FW config
+
+
 ## Who is it for?
+People who still believe in the potential of Zombocom. Or, alternatively:  sysadmins, neteng, QA testers.
+
 ## How would I use it, where does it fit?
 ![testrunflow](https://user-images.githubusercontent.com/1390085/162353856-38e9707b-9da4-4f84-9e52-9b9c23eb89cb.png#gh-light-mode-only)
 ![fwtesting](https://user-images.githubusercontent.com/1390085/162351589-f930116c-9054-496e-aef0-5b034c0fbfd7.png#gh-light-mode-only)
