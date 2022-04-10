@@ -32,6 +32,10 @@ Right now most tests are centered around ping, tcp port checks and curl/invoke-w
 People who still believe in the potential of Zombocom. Or, alternatively:  sysadmins, neteng, QA testers.
 
 ## How would I use it, where does it fit?
+Right now, use robotfwtest.csv as a template for your tests.
+Run-EweNetTests.ps1 imports the test cmdlet and runs against the robotfwtest.csv file.
+
+
 ![testrunflow](https://user-images.githubusercontent.com/1390085/162353856-38e9707b-9da4-4f84-9e52-9b9c23eb89cb.png#gh-light-mode-only)
 ![fwtesting](https://user-images.githubusercontent.com/1390085/162351589-f930116c-9054-496e-aef0-5b034c0fbfd7.png#gh-light-mode-only)
 ## How do you report bugs?
