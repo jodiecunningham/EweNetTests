@@ -5,7 +5,7 @@ Library    OperatingSystem
 ${VMHOST}              firstserver
 ${VMRG}                firstlinuxrg
 ${DESTHOST}            www.google.com
-${DESTPORT}            80
+${DESTPORT}            443
 
 
 *** Test Cases ***
