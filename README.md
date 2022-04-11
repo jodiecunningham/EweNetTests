@@ -18,13 +18,14 @@ The idea with the testing is for it to be an automated pre/post change test suit
 Right now most tests are centered around ping, tcp port checks and curl/invoke-webrequests. They are broken up further in access method. 
 
 * azpsvmrun-linux- : Robot test runner uses Powershell Az module command Invoke-AzVmRunCommand for Linux-based tests (requires Azure guest agent on the testing host, Az PS module on Robot agent machine)
+* azpsvmrun-windows : Robot test runner uses Powershell Az module command Invoke-AzVmRunCommand for Windows-based tests (requires Azure guest agent on the testing host, Az PS module on Robot agent machine))
 * azvmrun-linux- : Robot test runner uses Azure az CLI vm run-command for Linux-based tests (requires Azure guest agent on the testing host, Azure CLI on Robot agent machine)
 * linuxssh- : Robot test runner connects to a Linux host via SSH to execute Linux-based tests (requires SSH client and Robot SSHLibrary)
 * winrm- : Robot test runner connects to a Windows machine with WinRM (requires pywinrm and Robot WinRM library)
 
 ## Outstanding objectives:
 * Bash and Linux tool-based CSV parsing test runner
-* Az CLI and Az PS runners for Windows based tests
+* Az CLI runners for Windows based tests
 * Automatic test method and test host selection based CSV details or known FW config
 
 
