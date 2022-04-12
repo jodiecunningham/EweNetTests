@@ -20,12 +20,12 @@ Right now most tests are centered around ping, tcp port checks and curl/invoke-w
 * azpsvmrun-linux- : Robot test runner uses Powershell Az module command Invoke-AzVmRunCommand for Linux-based tests (requires Azure guest agent on the testing host, Az PS module on Robot agent machine)
 * azpsvmrun-windows : Robot test runner uses Powershell Az module command Invoke-AzVmRunCommand for Windows-based tests (requires Azure guest agent on the testing host, Az PS module on Robot agent machine))
 * azvmrun-linux- : Robot test runner uses Azure az CLI vm run-command for Linux-based tests (requires Azure guest agent on the testing host, Azure CLI on Robot agent machine)
+* azvmrun-windows : Robot test runner uses Azure az CLI vm run-command for Windows-based tests (requires Azure guest agent on the testing host, Azure CLI on Robot agent machine))
 * linuxssh- : Robot test runner connects to a Linux host via SSH to execute Linux-based tests (requires SSH client and Robot SSHLibrary)
 * winrm- : Robot test runner connects to a Windows machine with WinRM (requires pywinrm and Robot WinRM library)
 
 ## Outstanding objectives:
-* Bash and Linux tool-based CSV parsing test runner
-* Az CLI runners for Windows based tests
+* Az CLI runners for Windows based tests that expect failures
 * Automatic test method and test host selection based CSV details or known FW config
 
 
@@ -34,7 +34,7 @@ People who still believe in the potential of Zombocom. Or, alternatively:  sysad
 
 ## How would I use it, where does it fit?
 Right now, use robotfwtest.csv as a template for your tests.
-Run-EweNetTests.ps1 imports the test cmdlet and runs against the robotfwtest.csv file.
+Run-EweNetTests.ps1 or Run-EweNetTests.py runs against the robotfwtest.csv file.
 
 
 ![testrunflow](https://user-images.githubusercontent.com/1390085/162353856-38e9707b-9da4-4f84-9e52-9b9c23eb89cb.png#gh-light-mode-only)
