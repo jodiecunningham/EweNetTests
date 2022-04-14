@@ -1,1 +1,0 @@
-curl -sSf -m 2 https://$desthost:$destport -q;echo $?
