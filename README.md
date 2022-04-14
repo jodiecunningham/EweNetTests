@@ -25,7 +25,6 @@ Right now most tests are centered around ping, tcp port checks and curl/invoke-w
 * winrm- : Robot test runner connects to a Windows machine with WinRM (requires pywinrm and Robot WinRM library)
 
 ## Outstanding objectives:
-* Az CLI runners for Windows based tests that expect failures
 * Automatic test method and test host selection based CSV details or known FW config
 
 
