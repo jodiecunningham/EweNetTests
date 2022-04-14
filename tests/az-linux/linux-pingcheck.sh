@@ -1,0 +1,1 @@
+ping -q -c4 -w 5 $desthost;echo $?
