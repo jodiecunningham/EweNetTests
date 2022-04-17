@@ -26,6 +26,7 @@ Right now most tests are centered around ping, tcp port checks and curl/invoke-w
 
 ## Outstanding objectives:
 * Automatic test method and test host selection based CSV details or known FW config
+* AWS SSM runners
 
 
 ## Who is it for?
