@@ -25,7 +25,12 @@ Right now most tests are centered around ping, tcp port checks and curl/invoke-w
 * winrm- : Robot test runner connects to a Windows machine with WinRM (requires pywinrm and Robot WinRM library)
 
 ## Outstanding objectives:
-* Automatic test method and test host selection based CSV details or known FW config
+* Azure App Service Windows Plan (not docker based) runners
+* Better host inventory, organization and tagging of some sort (surely this is already solved elsewhere)
+* Automatic test method and test host selection based on CSV details
+* AWS SSM runners
+* VMWare vmrun runners
+* Automatic test method and test host selection based on evaluated firewall config
 
 
 ## Who is it for?
