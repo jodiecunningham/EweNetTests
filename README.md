@@ -21,11 +21,11 @@ Right now most tests are centered around ping, tcp port checks and curl/invoke-w
 * azpsvmrun-windows : Robot test runner uses Powershell Az module command Invoke-AzVmRunCommand for Windows-based tests (requires Azure guest agent on the testing host, Az PS module on Robot agent machine))
 * azvmrun-linux- : Robot test runner uses Azure az CLI vm run-command for Linux-based tests (requires Azure guest agent on the testing host, Azure CLI on Robot agent machine)
 * azvmrun-windows : Robot test runner uses Azure az CLI vm run-command for Windows-based tests (requires Azure guest agent on the testing host, Azure CLI on Robot agent machine))
+* azapp-windows : Robot test runner uses Powershell Az module commands to get credentials for the App Service, then uses a slick Powershell module to access the Azure App Services Kudu API in the Windows plan App Services ( requires Az PS module on Robot Agent Machine ) 
 * linuxssh- : Robot test runner connects to a Linux host via SSH to execute Linux-based tests (requires SSH client and Robot SSHLibrary)
 * winrm- : Robot test runner connects to a Windows machine with WinRM (requires pywinrm and Robot WinRM library)
 
 ## Outstanding objectives:
-* Azure App Service Windows Plan (not docker based) runners
 * Better host inventory, organization and tagging of some sort (surely this is already solved elsewhere)
 * Automatic test method and test host selection based on CSV details
 * AWS SSM runners
